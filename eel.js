@@ -10,7 +10,7 @@
         var descriptor = {
         blocks: [
         [' ', 'load %s from %m.source', 'load', '', 'URL'],
-        ['b', 'installed?', 'check']
+        ['b', 'eel installed?', 'check']
         ],
         menus: {
         source: ['URL', 'text']
