@@ -18,4 +18,5 @@
     url: 'https://github.com/ac8774/Easy-Extension-Loader'
     };
     ScratchExtensions.register('Easy Extension Loader', descriptor, ext);
+    ScratchExtensions.notify('Easy Extension Loader is now active.')
 })({});
