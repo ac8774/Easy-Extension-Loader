@@ -9,7 +9,7 @@
     ext.check = function(){return true;};
         var descriptor = {
         blocks: [
-        [' ', 'load %s from %m.source', 'load'],
+        [' ', 'load %s from %m.source', 'load', '', 'URL'],
         ['b', 'installed?', 'check']
         ],
         menus: {
