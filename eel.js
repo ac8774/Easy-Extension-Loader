@@ -1,13 +1,20 @@
 (function(ext) {
     ext._shutdown = function() {};
     ext._getStatus = function() {return {status: 2, msg: 'Ready'};};
-    ext.url = function(url) {ScratchExtensions.loadExternalJS(url);};
-    ext.text = function(text) {eval(text);};
-    var descriptor = {
+    ext.load = function(source, text) {
+        if source = "URL" {ScratchExtensions.loadExternalJS(text);}
+        else
+        {eval(text);}
+    }
+    ext.check = function(){return true}
+        var descriptor = {
         blocks: [
-        [' ', 'load from URL: %s', 'url'],
-        [' ', 'load from text: %s', 'text'],
+        [' ', 'load from %m.source: %s', 'load'],
+        ['b', 'installed?', 'check']
         ]
+        menus: {
+        source: ['URL', 'text']
+    },
     };
     ScratchExtensions.register('Easy Extension Loader', descriptor, ext);
 })({});
