@@ -22,7 +22,7 @@
       <h1>
 <a id="easy-extension-loader" class="anchor" href="#easy-extension-loader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Easy Extension Loader</h1>
 
-<p>Drag EEL into your bookmarks bar. </p>
+<p>Drag <a href="javascript:(function()%7B(function(ext)%20%7Bext._shutdown%20%3D%20function()%20%7B%7D%3Bext._getStatus%20%3D%20function()%20%7Breturn%20%7Bstatus%3A%202%2C%20msg%3A%20'Ready'%7D%3B%7D%3Bext.load%20%3D%20function(text%2C%20source)%20%7Bif%20(source%20%3D%3D%3D%20%22URL%22)%20%7BScratchExtensions.loadExternalJS(text)%3B%7Delse%7Beval(text)%3B%7D%7D%3Bext.check%20%3D%20function()%7Breturn%20true%3B%7D%3Bvar%20descriptor%20%3D%20%7Bblocks%3A%20%5B%5B'%20'%2C%20'load%20%25s%20from%20%25m.source'%2C%20'load'%2C%20'https%3A%2F%2Fraw.githubusercontent.com%2FIwotastic%2FScratch-Boost%2Fmaster%2Fsrc%2Finstaller.js'%2C%20'URL'%5D%2C%5B'b'%2C%20'eel%20installed%3F'%2C%20'check'%5D%5D%2Cmenus%3A%20%7Bsource%3A%20%5B'URL'%2C%20'text'%5D%7D%2Curl%3A%20'https%3A%2F%2Fgithub.com%2Fac8774%2FEasy-Extension-Loader'%7D%3BScratchExtensions.register('Easy%20Extension%20Loader'%2C%20descriptor%2C%20ext)%3BScratchExtensions.notify('Easy%20Extension%20Loader%20is%20now%20active.')%7D)(%7B%7D)%7D)()">EEL</a> into your bookmarks bar. </p>
 
 <p>Then, when viewing a project, click on it and EEL will run all on its own!</p>
 
