@@ -9,7 +9,7 @@
     ext.check = function(){return true;};
         var descriptor = {
         blocks: [
-        [' ', 'load %s from %m.source', 'load', '', 'URL', 'https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/installer.js'],
+        [' ', 'load %s from %m.source', 'load', 'https://raw.githubusercontent.com/Iwotastic/Scratch-Boost/master/src/installer.js', 'URL'],
         ['b', 'eel installed?', 'check']
         ],
         menus: {
