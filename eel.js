@@ -7,11 +7,12 @@
         {eval(text);}
     };
     ext.check = function(){return true;};
+    ext.runall = function(){return true;};
         var descriptor = {
         blocks: [
         [' ', 'load %s from %m.source', 'load', 'https://rawgit.com/Iwotastic/Scratch-Boost/master/src/installer.js', 'URL'],
         ['b', 'eel installed?', 'check'],
-        ['h', 'load extensions here:', 'check']
+        ['h', 'load extensions here:', 'runall']
         ],
         menus: {
         source: ['URL', 'text']
